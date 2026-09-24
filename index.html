@@ -1,0 +1,2054 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stadnina Koni Rzepkowo · Nauka i trening jazdy konnej (Projekt Stajnia)</title>
+  <meta name="description" content="Stadnina Koni Rzepkowo działająca w ramach agroturystyki Projekt Stajnia. Nauka i szkolenie jazdy konnej od podstaw, treningi, wypoczynek wśród natury i blisko morza." />
+  <meta property="og:title" content="Stadnina Koni Rzepkowo · Nauka i trening jazdy konnej" />
+  <meta property="og:description" content="Zapraszamy na naukę i szkolenie jazdy konnej w Stadninie Koni Rzepkowo (agroturystyka Projekt Stajnia). Czas na relaks w siodle i w otoczeniu natury." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/jpeg" href="https://i.ibb.co/QFGJGFTh/451333023-998680318934127-8646398910792124161-n.jpg" />
+
+  <!-- Performance Resource Hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="dns-prefetch" href="https://i.ibb.co" />
+  <link rel="preload" as="image" href="https://i.ibb.co/TBBLTb03/494693427-1239526838182806-3433043626898533986-n.jpg" fetchpriority="high" />
+
+  <!-- Google Fonts: Fraunces & Jost with display=swap for instant text render -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Jost:ital,wght@0,300..500;1,300..500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-cream: #FAF7F2;
+      --bg-sand: #F3EDE2;
+      --bg-sand-light: #F7F3EB;
+      --card-white: #FFFFFF;
+      --sage-green: #5F6F52;
+      --sage-dark: #3F4E34;
+      --sage-light: #829474;
+      --sage-wash: rgba(95, 111, 82, 0.08);
+      --wood-brown: #8A6B4E;
+      --wood-light: #B49A80;
+      --text-main: #2E2924;
+      --text-muted: #6E685E;
+      --text-subtle: #A39B90;
+      --border-soft: rgba(110, 104, 94, 0.15);
+      --border-sage: rgba(95, 111, 82, 0.22);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      --font-serif: 'Fraunces', Georgia, serif;
+      --font-sans: 'Jost', system-ui, -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      font-weight: 350;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      max-width: 100vw;
+      position: relative;
+      touch-action: manipulation;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      content-visibility: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.25s ease, opacity 0.25s ease, border-color 0.25s ease;
+    }
+
+    button {
+      font-family: inherit;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    .container-narrow {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* TYPOGRAPHY */
+    .font-serif {
+      font-family: var(--font-serif);
+      font-weight: 400;
+    }
+
+    .section-eyebrow {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--sage-green);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .section-headline {
+      font-family: var(--font-serif);
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      font-weight: 400;
+      line-height: 1.3;
+      color: var(--text-main);
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+    }
+
+    .section-lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 620px;
+      margin-bottom: 24px;
+    }
+
+    .motto-banner {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+      color: var(--sage-dark);
+      text-align: center;
+      line-height: 1.6;
+      padding: 30px 20px;
+    }
+
+    /* SUBTLE BUTTONS & LINKS */
+    .btn-subtle {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 22px;
+      border-radius: var(--radius-full);
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      border: 1px solid var(--border-sage);
+      color: var(--sage-dark);
+      background-color: transparent;
+      transition: all 0.3s ease;
+    }
+
+    .btn-subtle:hover {
+      background-color: var(--sage-wash);
+      border-color: var(--sage-green);
+      color: var(--text-main);
+    }
+
+    .btn-subtle-white {
+      border-color: rgba(255, 255, 255, 0.5);
+      color: #FFFFFF;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+
+    .btn-subtle-white:hover {
+      background: rgba(255, 255, 255, 0.25);
+      border-color: #FFFFFF;
+      color: #FFFFFF;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.92rem;
+      color: var(--sage-green);
+      font-weight: 400;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      transition: all 0.25s ease;
+    }
+
+    .text-link:hover {
+      color: var(--sage-dark);
+      border-bottom-color: var(--sage-dark);
+    }
+
+    .text-link svg {
+      transition: transform 0.25s ease;
+    }
+
+    .text-link:hover svg {
+      transform: translateX(3px);
+    }
+
+    /* 1. NAWIGACJA */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 20px 0;
+      background: transparent;
+      transform: translateZ(0);
+      will-change: background-color, padding, box-shadow;
+      transition: background-color 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background-color: rgba(250, 247, 242, 0.96);
+      padding: 12px 0;
+      box-shadow: 0 1px 10px rgba(46, 41, 36, 0.06);
+      border-bottom: 1px solid rgba(110, 104, 94, 0.08);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+      opacity: 0.95;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      transition: border-color 0.3s ease;
+    }
+
+    .navbar.scrolled .nav-brand-logo {
+      border-color: var(--border-soft);
+    }
+
+    .nav-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav-brand-name {
+      font-family: var(--font-serif);
+      font-size: 1.12rem;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      transition: color 0.3s ease;
+    }
+
+    .navbar.scrolled .nav-brand-name {
+      color: var(--text-main);
+    }
+
+    .nav-brand-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.8);
+      transition: color 0.3s ease;
+    }
+
+    .navbar.scrolled .nav-brand-sub {
+      color: var(--text-muted);
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-item-link {
+      font-size: 0.9rem;
+      font-weight: 350;
+      color: rgba(255, 255, 255, 0.9);
+      letter-spacing: 0.02em;
+      transition: color 0.25s ease;
+      position: relative;
+    }
+
+    .navbar.scrolled .nav-item-link {
+      color: var(--text-main);
+    }
+
+    .nav-item-link:hover {
+      color: #FFFFFF;
+    }
+
+    .navbar.scrolled .nav-item-link:hover {
+      color: var(--sage-green);
+    }
+
+    .nav-contact-btn {
+      font-size: 0.85rem;
+      padding: 7px 18px;
+    }
+
+    /* Hamburger & Mobile Menu Toggle */
+    .mobile-btn {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      cursor: pointer;
+      color: #FFFFFF;
+      transition: all 0.25s ease;
+      position: relative;
+      z-index: 1001;
+      padding: 0;
+    }
+
+    .mobile-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .navbar.scrolled .mobile-btn {
+      background: var(--bg-sand);
+      border-color: var(--border-soft);
+      color: var(--text-main);
+    }
+
+    .navbar.scrolled .mobile-btn:hover {
+      background: var(--bg-sand-light);
+    }
+
+    .mobile-btn-icon {
+      width: 22px;
+      height: 22px;
+      display: block;
+      stroke-width: 2;
+    }
+
+    /* Mobile Drawer */
+    .mobile-menu-drawer {
+      position: fixed;
+      inset: 0;
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      background-color: var(--bg-cream);
+      z-index: 2100;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transform: translateY(-8px);
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+      padding: 24px 24px 36px;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+      box-sizing: border-box;
+    }
+
+    .mobile-menu-drawer.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .mobile-drawer-top {
+      width: 100%;
+      max-width: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .mobile-drawer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .mobile-drawer-brand img {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      object-fit: cover;
+    }
+
+    .mobile-drawer-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--text-main);
+    }
+
+    .mobile-close-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-full);
+      background: var(--bg-sand);
+      border: 1px solid var(--border-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--text-main);
+      transition: all 0.2s ease;
+    }
+
+    .mobile-close-btn:hover {
+      background: var(--bg-sand-light);
+      border-color: var(--sage-green);
+      color: var(--sage-dark);
+      transform: rotate(90deg);
+    }
+
+    .mobile-drawer-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      margin: auto 0;
+      padding: 20px 0;
+    }
+
+    .mobile-nav-item {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--text-main);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      transition: color 0.2s ease;
+    }
+
+    .mobile-nav-item:hover {
+      color: var(--sage-green);
+    }
+
+    /* 2. HERO */
+    .hero-section {
+      position: relative;
+      min-height: 92vh;
+      min-height: 92svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-image: linear-gradient(
+        180deg,
+        rgba(35, 33, 30, 0.42) 0%,
+        rgba(35, 33, 30, 0.58) 100%
+      ), url('https://i.ibb.co/TBBLTb03/494693427-1239526838182806-3433043626898533986-n.jpg');
+      background-size: cover;
+      background-position: center 35%;
+      color: #FFFFFF;
+      padding: 120px 28px 70px;
+    }
+
+    .hero-box {
+      max-width: 740px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-brand-tag {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.24em;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    .hero-heading {
+      font-family: var(--font-serif);
+      font-size: clamp(2.6rem, 5.8vw, 4.2rem);
+      font-weight: 350;
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin-bottom: 18px;
+      text-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero-motto {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: clamp(1.15rem, 2.2vw, 1.45rem);
+      color: rgba(250, 247, 242, 0.95);
+      line-height: 1.55;
+      margin-bottom: 34px;
+      max-width: 600px;
+      font-weight: 300;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 42px;
+    }
+
+    .hero-categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 22px;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.8);
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 22px;
+      max-width: 440px;
+    }
+
+    .hero-categories span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-categories span::after {
+      content: '·';
+      margin-left: 14px;
+      opacity: 0.5;
+    }
+
+    .hero-categories span:last-child::after {
+      content: '';
+      margin-left: 0;
+    }
+
+    /* 3. O NAS (OSOBISTA, LUDZKA OPOWIEŚĆ) */
+    .section-about {
+      padding: 100px 0 80px;
+      background-color: var(--bg-cream);
+    }
+
+    .about-story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+
+    .about-story-copy p {
+      color: var(--text-muted);
+      font-size: 1.02rem;
+      line-height: 1.85;
+      margin-bottom: 18px;
+    }
+
+    .about-story-copy p:last-child {
+      margin-bottom: 0;
+    }
+
+    .about-personal-box {
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .about-personal-title {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .about-photo-wrapper {
+      position: relative;
+    }
+
+    .about-photo-frame {
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--bg-sand);
+      box-shadow: 0 10px 30px rgba(46, 41, 36, 0.06);
+    }
+
+    .about-photo-frame img {
+      width: 100%;
+      height: 440px;
+      max-height: 55vh;
+      object-fit: cover;
+      filter: saturate(0.92);
+      transition: filter 0.4s ease;
+    }
+
+    .about-photo-frame:hover img {
+      filter: saturate(1);
+    }
+
+    .about-photo-caption {
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+      font-style: italic;
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .zen-motto-wrapper {
+      max-width: 640px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 36px 20px;
+      border-top: 1px solid var(--border-soft);
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    .zen-motto {
+      font-family: var(--font-serif);
+      font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+      font-style: italic;
+      color: var(--sage-dark);
+      letter-spacing: 0.02em;
+      line-height: 1.5;
+    }
+
+    /* 4. OFERTA & JEŹDZIECTWO */
+    .section-offer {
+      padding: 90px 0;
+      background-color: var(--bg-sand-light);
+    }
+
+    .offer-header {
+      text-align: center;
+      max-width: 620px;
+      margin: 0 auto 56px;
+    }
+
+    .offer-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .offer-card {
+      background: var(--card-white);
+      border-radius: var(--radius-md);
+      padding: 36px 30px;
+      border: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 28px rgba(46, 41, 36, 0.06);
+    }
+
+    .offer-card-type {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--sage-green);
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .offer-card-title {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.35;
+      color: var(--text-main);
+      margin-bottom: 14px;
+    }
+
+    .offer-card-desc {
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+
+    .offer-card-detail {
+      font-size: 0.88rem;
+      color: var(--text-main);
+      padding-top: 18px;
+      border-top: 1px solid rgba(110, 104, 94, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* 5. ATRAKCJE W OKOLICY (LOKALNY KONTEKST - VELO BALTICA / PLAŻA) */
+    .section-surroundings {
+      padding: 90px 0;
+      background-color: var(--bg-cream);
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .surroundings-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .surroundings-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .surroundings-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .surroundings-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--sage-green);
+      margin-top: 9px;
+      flex-shrink: 0;
+    }
+
+    .surroundings-title {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      color: var(--text-main);
+      margin-bottom: 3px;
+    }
+
+    .surroundings-text {
+      font-size: 0.94rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    .surroundings-quote {
+      background: var(--bg-sand);
+      padding: 34px 32px;
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--sage-green);
+    }
+
+    .surroundings-quote-text {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.08rem;
+      line-height: 1.75;
+      color: var(--text-main);
+      margin-bottom: 12px;
+    }
+
+    .surroundings-quote-author {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    /* 6. GALERIA (GĘSTA MOZAIKA - SPONTANICZNY ALBUM) */
+    .section-gallery {
+      padding: 90px 0;
+      background-color: var(--bg-sand);
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .gallery-mosaic {
+      column-count: 4;
+      column-gap: 16px;
+    }
+
+    .gallery-mosaic-item {
+      break-inside: avoid;
+      margin-bottom: 16px;
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background-color: var(--bg-sand-light);
+      cursor: pointer;
+      position: relative;
+    }
+
+    .gallery-mosaic-item img {
+      width: 100%;
+      display: block;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: saturate(0.95);
+    }
+
+    .gallery-mosaic-item:hover img {
+      transform: scale(1.02);
+      filter: saturate(1.03);
+    }
+
+    .gallery-social-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .gallery-social-entry {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .gallery-social-entry a {
+      color: var(--sage-dark);
+      font-weight: 450;
+      border-bottom: 1px solid var(--border-sage);
+    }
+
+    .gallery-social-entry a:hover {
+      color: var(--text-main);
+      border-bottom-color: var(--text-main);
+    }
+
+    /* 7. OPINIE (SPOKOJNE, JAK W GAZECIE) */
+    .section-reviews {
+      padding: 90px 0;
+      background-color: var(--bg-cream);
+    }
+
+    .reviews-intro {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 50px;
+    }
+
+    .reviews-column-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+
+    .review-editorial-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-top: 1px solid var(--border-soft);
+      padding-top: 24px;
+    }
+
+    .review-quote-body {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.04rem;
+      line-height: 1.8;
+      color: var(--text-main);
+      margin-bottom: 22px;
+    }
+
+    .review-signature {
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .review-signature::before {
+      content: '—';
+      color: var(--sage-green);
+    }
+
+    .reviews-fb-note {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* 8. GODZINY OTWARCIA (CZYTELNE, SPOKOJNE) */
+    .section-hours {
+      padding: 80px 0;
+      background-color: var(--bg-sand-light);
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .hours-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hours-table-wrap {
+      background: var(--card-white);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      border: 1px solid var(--border-soft);
+    }
+
+    .hours-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .hours-table tr {
+      border-bottom: 1px solid rgba(110, 104, 94, 0.08);
+    }
+
+    .hours-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .hours-table td {
+      padding: 12px 6px;
+    }
+
+    .hours-table .day-col {
+      color: var(--text-main);
+      font-weight: 400;
+    }
+
+    .hours-table .time-col {
+      text-align: right;
+      color: var(--sage-dark);
+      font-weight: 450;
+    }
+
+    .hours-table tr.closed .time-col {
+      color: var(--text-subtle);
+      font-weight: 350;
+      font-style: italic;
+    }
+
+    .hours-table tr.weekend .day-col {
+      color: var(--sage-dark);
+    }
+
+    .hours-notice {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .hours-notice-p {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      line-height: 1.75;
+    }
+
+    /* 9. KONTAKT & MAPA / KARTA INFORMACYJNA */
+    .section-contact {
+      padding: 90px 0;
+      background-color: var(--bg-cream);
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: stretch;
+    }
+
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-items-list {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .contact-entry {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .contact-entry-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-full);
+      background-color: var(--sage-wash);
+      color: var(--sage-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .contact-entry-label {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .contact-entry-value {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      color: var(--text-main);
+    }
+
+    .contact-entry-value a:hover {
+      color: var(--sage-green);
+    }
+
+    .contact-location-card {
+      background: var(--bg-sand);
+      border-radius: var(--radius-md);
+      padding: 40px 34px;
+      border: 1px solid var(--border-soft);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .location-card-symbol {
+      width: 54px;
+      height: 54px;
+      border-radius: var(--radius-full);
+      border: 1px dashed var(--border-sage);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sage-dark);
+      margin-bottom: 18px;
+    }
+
+    .location-card-city {
+      font-family: var(--font-serif);
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .location-card-tag {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--sage-green);
+      margin-bottom: 16px;
+    }
+
+    .location-card-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 360px;
+      margin-bottom: 24px;
+    }
+
+    /* 10. STOPKA (SPOKOJNA, TRZYKOLUMNOWA) */
+    .site-footer {
+      background-color: var(--bg-sand);
+      color: var(--text-main);
+      padding: 70px 0 30px;
+      border-top: 1px solid var(--border-soft);
+    }
+
+    .footer-three-col {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1.3fr;
+      gap: 50px;
+      margin-bottom: 50px;
+    }
+
+    .footer-brand-title {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+
+    .footer-motto-text {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      max-width: 320px;
+    }
+
+    .footer-social-row {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .footer-social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.86rem;
+      color: var(--sage-dark);
+    }
+
+    .footer-social-link:hover {
+      color: var(--text-main);
+      text-decoration: underline;
+    }
+
+    .footer-col-header {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 16px;
+      font-weight: 400;
+    }
+
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-link-a {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .footer-link-a:hover {
+      color: var(--text-main);
+    }
+
+    .footer-contact-details {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .footer-contact-details a:hover {
+      color: var(--text-main);
+    }
+
+    .footer-copyright-bar {
+      padding-top: 24px;
+      border-top: 1px solid rgba(110, 104, 94, 0.12);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-subtle);
+    }
+
+    /* LIGHTBOX DLA GALERII */
+    .lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(30, 27, 24, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .lightbox-backdrop.active {
+      display: flex;
+    }
+
+    .lightbox-box {
+      max-width: 90vw;
+      max-height: 85vh;
+      position: relative;
+    }
+
+    .lightbox-box img {
+      max-width: 100%;
+      max-height: 85vh;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .lightbox-close-btn {
+      position: absolute;
+      top: -42px;
+      right: 0;
+      color: #FFFFFF;
+      font-size: 1.8rem;
+      cursor: pointer;
+      line-height: 1;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-full);
+      transition: background-color 0.2s ease;
+    }
+
+    .lightbox-close-btn:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    /* SUBTLE SCROLL REVEAL - GPU-accelerated and smooth */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(16px) translateZ(0);
+      will-change: opacity, transform;
+      transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0) translateZ(0);
+      will-change: auto;
+    }
+
+    /* Prevent text overflowing and break words */
+    .contact-entry-value, .footer-contact-details, .about-story-copy, .section-headline, .hero-heading {
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+
+    /* RESPONSIVE DESIGN (1024px & 768px & 480px) */
+    @media (max-width: 1024px) {
+      .gallery-mosaic {
+        column-count: 3;
+      }
+      .offer-cards-grid, .reviews-column-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer-three-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container, .container-narrow {
+        padding: 0 18px;
+      }
+      .nav-menu, .nav-contact-btn {
+        display: none;
+      }
+      .mobile-btn {
+        display: flex;
+      }
+      .about-story-grid, .surroundings-grid, .hours-container, .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .offer-cards-grid, .reviews-column-list {
+        grid-template-columns: 1fr;
+      }
+      .gallery-mosaic {
+        column-count: 2;
+        column-gap: 12px;
+      }
+      .gallery-mosaic-item {
+        margin-bottom: 12px;
+      }
+      .footer-three-col {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .footer-copyright-bar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      .hero-section {
+        padding: 100px 18px 60px;
+        background-position: center 30%;
+      }
+      .hero-links {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 280px;
+      }
+      .hero-links .btn-subtle {
+        width: 100%;
+        justify-content: center;
+      }
+      .hours-table-wrap, .contact-location-card, .offer-card, .surroundings-quote {
+        padding: 24px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-mosaic {
+        column-count: 1;
+      }
+      .hero-categories {
+        flex-direction: column;
+        gap: 8px;
+      }
+      .hero-categories span::after {
+        content: '';
+      }
+      .contact-entry-value {
+        font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. NAWIGACJA (MINIMALISTYCZNA, SPOKOJNA) -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="nav-brand" aria-label="Stadnina Koni Rzepkowo">
+        <img src="https://i.ibb.co/QFGJGFTh/451333023-998680318934127-8646398910792124161-n.jpg" alt="Logo Stadnina Koni Rzepkowo" class="nav-brand-logo" />
+        <div class="nav-brand-text">
+          <span class="nav-brand-name">Stadnina Koni Rzepkowo</span>
+          <span class="nav-brand-sub">w agroturystyce Projekt Stajnia</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#o-nas" class="nav-item-link">O stadninie</a></li>
+        <li><a href="#jazda-konna" class="nav-item-link">Jazda konna</a></li>
+        <li><a href="#agroturystyka" class="nav-item-link">Agroturystyka</a></li>
+        <li><a href="#okolica" class="nav-item-link">Okolica</a></li>
+        <li><a href="#galeria" class="nav-item-link">Galeria</a></li>
+        <li><a href="#godziny" class="nav-item-link">Godziny</a></li>
+        <li><a href="#opinie" class="nav-item-link">Opinie</a></li>
+        <li><a href="#kontakt" class="nav-item-link">Kontakt</a></li>
+      </ul>
+
+      <a href="tel:503354022" class="btn-subtle nav-contact-btn">
+        <span>503 354 022</span>
+      </a>
+
+      <button class="mobile-btn" id="mobileToggle" aria-label="Otwórz menu mobilne" aria-expanded="false">
+        <svg class="mobile-btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobilna szuflada menu z przyciskiem zamknięcia -->
+  <div class="mobile-menu-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Menu nawigacji">
+    <div class="mobile-drawer-top">
+      <div class="mobile-drawer-brand">
+        <img src="https://i.ibb.co/QFGJGFTh/451333023-998680318934127-8646398910792124161-n.jpg" alt="Logo Stadnina Koni Rzepkowo" />
+        <span class="mobile-drawer-title">Stadnina Koni Rzepkowo</span>
+      </div>
+      <button class="mobile-close-btn" id="mobileClose" aria-label="Zamknij menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="mobile-drawer-nav">
+      <a href="#o-nas" class="mobile-nav-item drawer-link">O stadninie</a>
+      <a href="#jazda-konna" class="mobile-nav-item drawer-link">Jazda konna</a>
+      <a href="#agroturystyka" class="mobile-nav-item drawer-link">Agroturystyka</a>
+      <a href="#okolica" class="mobile-nav-item drawer-link">Okolica</a>
+      <a href="#galeria" class="mobile-nav-item drawer-link">Galeria</a>
+      <a href="#godziny" class="mobile-nav-item drawer-link">Godziny</a>
+      <a href="#opinie" class="mobile-nav-item drawer-link">Opinie</a>
+      <a href="#kontakt" class="mobile-nav-item drawer-link">Kontakt</a>
+    </nav>
+
+    <div style="width: 100%; max-width: 320px; display: flex; flex-direction: column; gap: 10px; margin-top: auto; padding-top: 16px; border-top: 1px solid var(--border-soft);">
+      <a href="tel:503354022" class="btn-subtle drawer-link" style="justify-content: center; width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>503 354 022</span>
+      </a>
+      <a href="mailto:projektstajnia@gmail.com" class="btn-subtle drawer-link" style="justify-content: center; width: 100%;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        <span>projektstajnia@gmail.com</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. HERO (SPOKOJNE, W DUCHU CZAS NA RELAKS - STADNINA KONI RZEPKOWO) -->
+  <header class="hero-section" id="hero">
+    <div class="hero-box">
+      <span class="hero-brand-tag">Stadnina Koni Rzepkowo · w agroturystyce „Projekt Stajnia”</span>
+      <h1 class="hero-heading">Nauka i pasja jazdy konnej</h1>
+      <p class="hero-motto">
+        Zapraszamy na naukę i szkolenie jazdy konnej w kameralnej atmosferze. Czas na relaks — niech otuli Cię cisza i spokój w miejscu przepełnionym dobrą energią.
+      </p>
+
+      <div class="hero-links">
+        <a href="#jazda-konna" class="btn-subtle btn-subtle-white">
+          <span>Nasza oferta jazd</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <a href="#kontakt" class="btn-subtle btn-subtle-white">
+          <span>Skontaktuj się i umów</span>
+        </a>
+      </div>
+
+      <div class="hero-categories">
+        <span>Nauka od podstaw</span>
+        <span>Szkolenie jeźdźców</span>
+        <span>Agroturystyka & plaża</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. O NAS (STADNINA KONI RZEPKOWO W RAMACH PROJEKTU STAJNIA) -->
+  <section class="section-about" id="o-nas">
+    <div class="container">
+      <div class="about-story-grid">
+        <div class="about-story-copy fade-up">
+          <span class="section-eyebrow">O naszej stadninie</span>
+          <h2 class="section-headline">Stadnina Koni Rzepkowo — z miłości do koni, natury i spokoju</h2>
+          <p>
+            <strong>Stadnina Koni Rzepkowo</strong> to kameralny ośrodek jeździecki prowadzony z sercem, działający w ramach urokliwej agroturystyki <strong>„Projekt Stajnia”</strong>. Naszą misją jest bezpieczna, pełna zrozumienia nauka jazdy konnej oraz stworzenie miejsca, w którym człowiek i koń tworzą prawdziwą harmonię.
+          </p>
+          <p>
+            U nas nie ma pośpiechu ani presji wyników. Niezależnie od tego, czy stawiasz pierwsze kroki w siodle, czy szlifujesz umiejętności jeździeckie, oferujemy indywidualne podejście, zrównoważone i zadbane konie oraz wsparcie doświadczonych, cierpliwych instruktorów.
+          </p>
+          <p>
+            Dzięki lokalizacji na terenie agroturystyki „Projekt Stajnia”, po skończonej jeździe możesz zrelaksować się na ganku z kubkiem ciepłej herbaty, wsłuchać w ciszę otaczających łąk i poczuć świeżą, nadmorską bryzę — jesteśmy położeni zaledwie chwilę drogi od bałtyckiej plaży.
+          </p>
+
+          <div class="about-personal-box">
+            <h3 class="about-personal-title">Ludzie, konie i atmosfera</h3>
+            <p style="font-size: 0.95rem; margin-bottom: 12px;">
+              Każdego odwiedzającego witamy jak dobrego przyjaciela. Dbamy o dobrostan naszych koni — to one są tu najważniejszymi nauczycielami cierpliwości, równowagi i spokoju ducha. Zapraszamy zarówno dzieci, młodzież, jak i dorosłych.
+            </p>
+            <a href="#kontakt" class="text-link">
+              <span>Umów się na wizytę w stadninie</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="about-photo-wrapper fade-up">
+          <div class="about-photo-frame">
+            <img src="https://i.ibb.co/MkVQXPSY/494924798-1240861894715967-7729182019216445658-n.jpg" alt="Koń w Stadninie Koni Rzepkowo" width="700" height="466" loading="lazy" decoding="async" />
+          </div>
+          <div class="about-photo-caption">
+            Stadnina Koni Rzepkowo · Spokój, przestrzeń i zaufanie
+          </div>
+        </div>
+      </div>
+
+      <!-- Wyróżnione motto -->
+      <div class="zen-motto-wrapper fade-up">
+        <p class="zen-motto">
+          „Zwolnij. Odetchnij. Poczuj harmonię z koniem i naturą.”
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. JAZDA KONNA & SPOKOJNA OFERTA STADNINY -->
+  <section class="section-offer" id="jazda-konna">
+    <div class="container">
+      <div class="offer-header fade-up">
+        <span class="section-eyebrow">Oferta Stadniny Koni Rzepkowo</span>
+        <h2 class="section-headline">Nauka i treningi w rytmie natury</h2>
+        <p class="section-lead" style="margin: 0 auto;">
+          Zapraszamy na naukę i szkolenie jazdy konnej bez pośpiechu i stresu. Skupiamy się na porozumieniu, prawidłowym dosiadzie i dobrym samopoczuciu konia i jeźdźca.
+        </p>
+      </div>
+
+      <div class="offer-cards-grid">
+        <!-- Karta 1 -->
+        <div class="offer-card fade-up">
+          <div>
+            <span class="offer-card-type">Dla początkujących</span>
+            <h3 class="offer-card-title">Nauka jazdy konnej od podstaw</h3>
+            <p class="offer-card-desc">
+              Cierpliwe, bezpieczne wprowadzenie do jeździectwa. Uczymy czyszczenia, siodłania, komunikacji i prawidłowego dosiadu na lonży. Budujemy pewność siebie krok po kroku.
+            </p>
+          </div>
+          <div class="offer-card-detail">
+            <span>Zajęcia na lonży i ujeżdżalni</span>
+            <a href="tel:503354022" class="text-link">Zadzwoń i umów jazdę →</a>
+          </div>
+        </div>
+
+        <!-- Karta 2 -->
+        <div class="offer-card fade-up">
+          <div>
+            <span class="offer-card-type">Doskonalenie jeździectwa</span>
+            <h3 class="offer-card-title">Szkolenie i trening jeźdźców</h3>
+            <p class="offer-card-desc">
+              Dla jeźdźców pragnących rozwijać technikę, precyzję pomocy, pracę w stępie, kłusie i galopie oraz ujeżdżenie w sprzyjającej skupieniu atmosferze.
+            </p>
+          </div>
+          <div class="offer-card-detail">
+            <span>Indywidualne podejście</span>
+            <a href="tel:503354022" class="text-link">Zapytaj o termin →</a>
+          </div>
+        </div>
+
+        <!-- Karta 3 -->
+        <div class="offer-card fade-up" id="agroturystyka">
+          <div>
+            <span class="offer-card-type">W ramach agroturystyki</span>
+            <h3 class="offer-card-title">Projekt Stajnia — relaks & nocleg</h3>
+            <p class="offer-card-desc">
+              Stadnina działa w strukturach agroturystyki „Projekt Stajnia”. Po jeździe konnej skorzystasz tu z uroków wiejskiego wypoczynku, bliskości lasów i plaży.
+            </p>
+          </div>
+          <div class="offer-card-detail">
+            <span>Wypoczynek na wsi</span>
+            <a href="#kontakt" class="text-link">Dowiedz się więcej →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. OKOLICA I ATRAKCJE (BLISKO PLAŻY / VELO BALTICA / NATURA) -->
+  <section class="section-surroundings" id="okolica">
+    <div class="container">
+      <div class="surroundings-grid">
+        <div class="fade-up">
+          <span class="section-eyebrow">Okolica</span>
+          <h2 class="section-headline">Natura, trasy rowerowe i bliskość morza</h2>
+          <p class="section-lead">
+            Rzepkowo położone jest w wyjątkowym punkcie — łączy w sobie urok zacisznej, wiejskiej agroturystyki z dogodnym dostępem do nadmorskich atrakcji i plaż Bałtyku.
+          </p>
+
+          <ul class="surroundings-list">
+            <li class="surroundings-item">
+              <span class="surroundings-bullet"></span>
+              <div>
+                <h4 class="surroundings-title">Bliskość plaży</h4>
+                <p class="surroundings-text">
+                  Krótka chwila dzieli nas od piaszczystych, szerokich plaż — idealnych na popołudniowy spacer po jeździe konnej lub kąpiel w morzu.
+                </p>
+              </div>
+            </li>
+            <li class="surroundings-item">
+              <span class="surroundings-bullet"></span>
+              <div>
+                <h4 class="surroundings-title">Nadmorskie szlaki rowerowe (m.in. Velo Baltica)</h4>
+                <p class="surroundings-text">
+                  Malownicze trasy wiodące przez nadmorskie lasy i łąki. To wymarzone tereny na wycieczki rowerowe z rodziną i przyjaciółmi.
+                </p>
+              </div>
+            </li>
+            <li class="surroundings-item">
+              <span class="surroundings-bullet"></span>
+              <div>
+                <h4 class="surroundings-title">Cisza i czyste powietrze</h4>
+                <p class="surroundings-text">
+                  Przestrzeń bez wielkomiejskiego smogu i hałasu. Tu nocne niebo zachwyca gwiazdami, a dni płyną w kojącym, naturalnym rytmie.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="surroundings-quote fade-up">
+          <p class="surroundings-quote-text">
+            „Cudowne miejsce, z dala od miasta, a zarazem blisko do plaży. Doskonałe miejsce żeby się wyciszyć, pouczyć jeździć konno. Zaangażowani trenerzy, przemili właściciele.”
+          </p>
+          <div class="surroundings-quote-author">
+            — z opinii gości odwiedzających Rzepkowo
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. GALERIA (GĘSTA MOZAIKA - SPONTANICZNY ALBUM ZE WSPOMNIENIAMI) -->
+  <section class="section-gallery" id="galeria">
+    <div class="container">
+      <div class="gallery-header fade-up">
+        <div>
+          <span class="section-eyebrow">Album wspomnień</span>
+          <h2 class="section-headline" style="margin-bottom: 6px;">Życie w Rzepkowie</h2>
+        </div>
+        <p class="section-lead" style="margin-bottom: 0; max-width: 440px;">
+          Codzienne chwile, radość spotkań z końmi i spokój otaczających łąk. Kliknij, aby powiększyć zdjęcie.
+        </p>
+      </div>
+
+      <!-- Mozaika 8 fotografii z wymiarami i async decoding -->
+      <div class="gallery-mosaic">
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/MkVQXPSY/494924798-1240861894715967-7729182019216445658-n.jpg')">
+          <img src="https://i.ibb.co/MkVQXPSY/494924798-1240861894715967-7729182019216445658-n.jpg" alt="Koń w stadninie Rzepkowo" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/sp5QN43P/494716784-1240861548049335-7542581153632874970-n.jpg')">
+          <img src="https://i.ibb.co/sp5QN43P/494716784-1240861548049335-7542581153632874970-n.jpg" alt="Koń na pastwisku w Rzepkowie" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/DHznKM0q/504463032-1270852288383594-1624977581193309990-n.jpg')">
+          <img src="https://i.ibb.co/DHznKM0q/504463032-1270852288383594-1624977581193309990-n.jpg" alt="Zajęcia i konie w Rzepkowie" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/1YRphQwy/504229005-1270852421716914-7894691393923241655-n.jpg')">
+          <img src="https://i.ibb.co/1YRphQwy/504229005-1270852421716914-7894691393923241655-n.jpg" alt="Konie w otoczeniu zieleni stajennej" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/N2Vz5yVr/503563333-1270849865050503-6423075895696774096-n.jpg')">
+          <img src="https://i.ibb.co/N2Vz5yVr/503563333-1270849865050503-6423075895696774096-n.jpg" alt="Spokojne chwile z końmi w Rzepkowie" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/tMDhnMwM/651379138-1534290348706452-4766626921308459201-n.jpg')">
+          <img src="https://i.ibb.co/tMDhnMwM/651379138-1534290348706452-4766626921308459201-n.jpg" alt="Relaks i konie w Projekt Stajnia" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/SwVZpPDN/654747279-1534290415373112-2536626954364781972-n.jpg')">
+          <img src="https://i.ibb.co/SwVZpPDN/654747279-1534290415373112-2536626954364781972-n.jpg" alt="Ujeżdżalnia i tereny jeździeckie" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+        <div class="gallery-mosaic-item" onclick="openLightbox('https://i.ibb.co/JFFtVX8S/653888563-1534290498706437-7329122789746757514-n.jpg')">
+          <img src="https://i.ibb.co/JFFtVX8S/653888563-1534290498706437-7329122789746757514-n.jpg" alt="Piękne widoki wokół stajni" width="600" height="400" loading="lazy" decoding="async" />
+        </div>
+      </div>
+
+      <!-- Delikatne linki do dwóch profili Facebooka -->
+      <div class="gallery-social-links fade-up">
+        <div class="gallery-social-entry">
+          <span>Więcej bieżących zdjęć:</span>
+          <a href="https://www.facebook.com/profile.php?id=100063765031258" target="_blank" rel="noopener noreferrer">
+            Facebook Stadniny Rzepkowo ↗
+          </a>
+        </div>
+        <div class="gallery-social-entry">
+          <span>Klimat agroturystyki:</span>
+          <a href="https://www.facebook.com/profile.php?id=61562675501943" target="_blank" rel="noopener noreferrer">
+            Facebook Projektu Stajnia ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. OPINIE (SPOKOJNE, W FORMIE CYTATÓW JAK W GAZECIE) -->
+  <section class="section-reviews" id="opinie">
+    <div class="container">
+      <div class="reviews-intro fade-up">
+        <span class="section-eyebrow">Rekomendacje</span>
+        <h2 class="section-headline">Co mówią nasi goście?</h2>
+      </div>
+
+      <div class="reviews-column-list">
+        <!-- Opinia 1 -->
+        <div class="review-editorial-card fade-up">
+          <p class="review-quote-body">
+            „Cudowne miejsce, z dala od miasta, a zarazem blisko do plaży. Doskonałe miejsce żeby się wyciszyć, pouczyć jeździć konno. Zaangażowani trenerzy, przemili właściciele. Na pewno tu wrócimy ❤”
+          </p>
+          <div class="review-signature">
+            <span>Gość Rzepkowa</span>
+          </div>
+        </div>
+
+        <!-- Opinia 2 -->
+        <div class="review-editorial-card fade-up">
+          <p class="review-quote-body">
+            „Choć nie rumakuję — polecam to miejsce na wypoczynek z przyjaciółmi, poranna kawa i te piękne widoki powalają. Gospodarze przez duże G, ocena 6 z kwiatkiem. Pozdrawiamy całą obsługę i Anię z zielonego wzgórza — daleko idący profesjonalizm.”
+          </p>
+          <div class="review-signature">
+            <span>Wypoczynek ze znajomymi</span>
+          </div>
+        </div>
+
+        <!-- Opinia 3 -->
+        <div class="review-editorial-card fade-up">
+          <p class="review-quote-body">
+            „Dzisiaj byłam pierwszy raz i jestem mile zaskoczona 🙂 Jeżdżę już jakiś czas i nikt nigdy tak mi nie wytłumaczył od podstaw, o co w tym wszystkim chodzi 🙂 Znalazłam swoje »końskie miejsce«, dziękuję! 😊”
+          </p>
+          <div class="review-signature">
+            <span>Pierwsza wizyta w siodle</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-fb-note fade-up">
+        <a href="https://www.facebook.com/profile.php?id=100063765031258&sk=reviews" target="_blank" rel="noopener noreferrer" class="text-link">
+          <span>Przeczytaj wszystkie opinie na Facebooku</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. GODZINY OTWARCIA (SPOKOJNY HARMONOGRAM) -->
+  <section class="section-hours" id="godziny">
+    <div class="container">
+      <div class="hours-container">
+        <div class="hours-table-wrap fade-up">
+          <span class="section-eyebrow" style="margin-bottom: 6px;">Harmonogram</span>
+          <h3 class="section-headline" style="font-size: 1.6rem; margin-bottom: 20px;">Kiedy jesteśmy na miejscu</h3>
+
+          <table class="hours-table">
+            <tr class="closed">
+              <td class="day-col">Poniedziałek</td>
+              <td class="time-col">Zamknięte</td>
+            </tr>
+            <tr>
+              <td class="day-col">Wtorek</td>
+              <td class="time-col">08:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td class="day-col">Środa</td>
+              <td class="time-col">08:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td class="day-col">Czwartek</td>
+              <td class="time-col">08:00 – 18:00</td>
+            </tr>
+            <tr>
+              <td class="day-col">Piątek</td>
+              <td class="time-col">08:00 – 18:00</td>
+            </tr>
+            <tr class="weekend">
+              <td class="day-col">Sobota</td>
+              <td class="time-col">08:00 – 15:00</td>
+            </tr>
+            <tr class="weekend">
+              <td class="day-col">Niedziela</td>
+              <td class="time-col">08:00 – 15:00</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="hours-notice fade-up">
+          <span class="section-eyebrow">Wskazówki</span>
+          <h2 class="section-headline">Prosimy o wcześniejszy kontakt</h2>
+          <p class="hours-notice-p">
+            Dbamy o spokój naszych koni oraz jakość każdej prowadzonej lekcji. Abyśmy mogli poświęcić Ci pełną uwagę i przygotować konia do jazdy, prosimy o wcześniejszy telefon lub wiadomość w celu rezerwacji dogodnego terminu.
+          </p>
+          <p class="hours-notice-p">
+            W poniedziałki stajnia odpoczywa — jest to czas regeneracji dla zwierząt i instruktorów.
+          </p>
+          <div style="margin-top: 10px;">
+            <a href="tel:503354022" class="btn-subtle">
+              <span>Zadzwoń: 503 354 022</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. KONTAKT I KARTA INFORMACYJNA DOJAZDU -->
+  <section class="section-contact" id="kontakt">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info-panel fade-up">
+          <span class="section-eyebrow">Kontakt</span>
+          <h2 class="section-headline">Zapraszamy do kontaktu</h2>
+          <p class="section-lead">
+            Chętnie odpowiemy na wszelkie pytania dotyczące lekcji jazdy konnej, dostępnych terminów czy pobytu w naszej agroturystyce.
+          </p>
+
+          <div class="contact-items-list">
+            <div class="contact-entry">
+              <div class="contact-entry-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-entry-label">Telefon</div>
+                <div class="contact-entry-value">
+                  <a href="tel:503354022">503 354 022</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-entry">
+              <div class="contact-entry-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="contact-entry-label">Poczta e-mail</div>
+                <div class="contact-entry-value">
+                  <a href="mailto:projektstajnia@gmail.com">projektstajnia@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-entry">
+              <div class="contact-entry-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+              </div>
+              <div>
+                <div class="contact-entry-label">Profile społecznościowe</div>
+                <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 4px;">
+                  <a href="https://www.facebook.com/profile.php?id=100063765031258" target="_blank" rel="noopener noreferrer" class="text-link" style="font-size: 0.95rem;">
+                    Stadnina Koni Rzepkowo ↗
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=61562675501943" target="_blank" rel="noopener noreferrer" class="text-link" style="font-size: 0.95rem;">
+                    Projekt Stajnia (Agroturystyka) ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Karta informacyjna miejscowości i dojazdu -->
+        <div class="contact-location-card fade-up">
+          <div class="location-card-symbol">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="location-card-city">Rzepkowo</h3>
+          <div class="location-card-tag">Stadnina Koni w agroturystyce „Projekt Stajnia”</div>
+          <p class="location-card-text">
+            Stadnina Koni Rzepkowo mieści się w malowniczej agroturystyce blisko natury i morza. Zadzwoń do nas lub napisz — z przyjemnością wskażemy najwygodniejszą trasę dojazdu i odpowiemy na wszelkie pytania.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+            <a href="tel:503354022" class="btn-subtle">
+              <span>Zadzwoń w sprawie dojazdu</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. STOPKA (SPOKOJNA, TRZYKOLUMNOWA) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-three-col">
+        <!-- Kolumna 1: Motto i Social Media -->
+        <div>
+          <div class="footer-brand-title">Stadnina Koni Rzepkowo</div>
+          <p class="footer-motto-text">
+            Ośrodek jeździecki w agroturystyce „Projekt Stajnia”. Zapraszamy na naukę i szkolenie jazdy konnej oraz relaks w bliskości natury.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://www.facebook.com/profile.php?id=100063765031258" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <span>Facebook Stadniny Koni ↗</span>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61562675501943" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+              <span>Facebook Projektu Stajnia (Agroturystyka) ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kolumna 2: Nawigacja -->
+        <div>
+          <h4 class="footer-col-header">Nawigacja</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" class="footer-link-a">Strona główna</a></li>
+            <li><a href="#o-nas" class="footer-link-a">O stadninie</a></li>
+            <li><a href="#jazda-konna" class="footer-link-a">Jazda konna i oferta</a></li>
+            <li><a href="#agroturystyka" class="footer-link-a">Agroturystyka</a></li>
+            <li><a href="#okolica" class="footer-link-a">Okolica i plaża</a></li>
+            <li><a href="#galeria" class="footer-link-a">Galeria zdjęć</a></li>
+            <li><a href="#godziny" class="footer-link-a">Godziny otwarcia</a></li>
+            <li><a href="#opinie" class="footer-link-a">Opinie gości</a></li>
+            <li><a href="#kontakt" class="footer-link-a">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Kolumna 3: Dane kontaktowe -->
+        <div>
+          <h4 class="footer-col-header">Kontakt & Lokalizacja</h4>
+          <ul class="footer-contact-details">
+            <li><strong>Obiekt:</strong> Stadnina Koni Rzepkowo</li>
+            <li><strong>Miejsce:</strong> Rzepkowo (Projekt Stajnia)</li>
+            <li><strong>Telefon:</strong> <a href="tel:503354022">503 354 022</a></li>
+            <li><strong>E-mail:</strong> <a href="mailto:projektstajnia@gmail.com">projektstajnia@gmail.com</a></li>
+            <li style="margin-top: 8px;">Wtorek – Piątek: 08:00 – 18:00</li>
+            <li>Sobota – Niedziela: 08:00 – 15:00</li>
+            <li style="font-style: italic;">Poniedziałek: Zamknięte</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-copyright-bar">
+        <span>© <span id="currentYear"></span> Stadnina Koni Rzepkowo (Projekt Stajnia). Wszelkie prawa zastrzeżone.</span>
+        <span>Rzepkowo · Nauka jazdy konnej & relaks</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox dla galerii -->
+  <div class="lightbox-backdrop" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="lightbox-box">
+      <button class="lightbox-close-btn" onclick="closeLightboxDirectly()" aria-label="Zamknij podgląd">×</button>
+      <img id="lightboxImage" src="" alt="Powiększone zdjęcie" />
+    </div>
+  </div>
+
+  <script>
+    // Rok w stopce
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Zmiana stylu nawigacji po przewinięciu > 50px z throttlem RAF i passive listenerem dla 60/120fps na mobile
+    const navbar = document.getElementById('navbar');
+    let ticking = false;
+    let isScrolled = false;
+
+    function updateNav() {
+      const shouldBeScrolled = window.scrollY > 50;
+      if (shouldBeScrolled !== isScrolled) {
+        isScrolled = shouldBeScrolled;
+        if (isScrolled) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      }
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(updateNav);
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // Inicjalizacja stanu na starcie
+    updateNav();
+
+    // Mobilne menu
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileDrawer = document.getElementById('mobileDrawer');
+    const mobileClose = document.getElementById('mobileClose');
+    const drawerLinks = document.querySelectorAll('.drawer-link');
+
+    function openMobileMenu() {
+      mobileDrawer.classList.add('open');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileDrawer.classList.remove('open');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobileDrawer.classList.contains('open');
+      if (isOpen) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    if (mobileClose) {
+      mobileClose.addEventListener('click', closeMobileMenu);
+    }
+
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    // Zamknięcie szuflady klawiszem Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        closeMobileMenu();
+      }
+    });
+
+    // Płynna animacja pojawiania się elementów (IntersectionObserver z wczesnym progiem dla płynności)
+    const fadeElements = document.querySelectorAll('.fade-up');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.05,
+        rootMargin: '40px 0px 40px 0px'
+      });
+
+      fadeElements.forEach(el => observer.observe(el));
+    } else {
+      fadeElements.forEach(el => el.classList.add('visible'));
+    }
+
+    // Prosty, lekki Lightbox dla mozaiki zdjęć
+    const lightboxModal = document.getElementById('lightboxModal');
+    const lightboxImage = document.getElementById('lightboxImage');
+
+    function openLightbox(src) {
+      lightboxImage.src = src;
+      lightboxModal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightboxDirectly() {
+      lightboxModal.classList.remove('active');
+      document.body.style.overflow = '';
+      lightboxImage.src = '';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightboxModal) {
+        closeLightboxDirectly();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightboxModal.classList.contains('active')) {
+        closeLightboxDirectly();
+      }
+    });
+  </script>
+</body>
+</html>

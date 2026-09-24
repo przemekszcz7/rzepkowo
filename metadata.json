@@ -1,0 +1,6 @@
+{
+  "name": "Stadnina Koni Rzepkowo",
+  "description": "Stadnina Koni Rzepkowo w ramach agroturystyki Projekt Stajnia. Nauka i szkolenie jazdy konnej oraz wypoczynek z dala od miasta, blisko plaży.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
